@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 005</title>
+</head>
+<body>
+    <h1>Exemplo de foemulário</h1>
+   
+    <form action="cadastro.php" method="post" autocomplete="on">
+        
+        <!--checked em input:radio só pode ser marcado um
+            checked em input:checkbox pode ser marcado mais de um
+        -->
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="ifeme"><label for="ifeme"> Feminino</label>
+            <input type="radio" name="sexo" id="imasc" checked><label for="imasc"> Masculino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esbasquet" id="iesbasquete" checked> <label for="iesbasquete">Basquete</label> <br>
+            <input type="checkbox" name="esfutebol" id="iesfutebol"> <label for="iesfutebol">Futebol</label> <br>
+            <input type="checkbox" name="estenis" id="iestenis"><label for="iestenis"> Tênis </label><br>
+            <input type="checkbox" name="esvolei" id="iesvolei" checked><label for="iesvolei"> Vôlei </label><br>
+
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
